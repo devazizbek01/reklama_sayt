@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMR Dasturi - Infinite-co</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <a href="index.html" class="logo" aria-label="OMR System bosh sahifa">
+                <span>OMR</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active" onclick="removeHash()">Bosh sahifa</a></li>
+                <li><a href="#demo">Funksiyalar</a></li>
+                <li><a href="#features">Afzalliklar</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="contact.html" class="btn-primary">Bog'lanish</a>
+                <button class="hamburger" id="hamburger" aria-label="Menyu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    
+    <header id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text" data-aos="fade-up">
+                <span class="badge">
+                    <i class="fas fa-star"></i> Professional Yechim
+                </span>
+                
+                <h1>Test jarayonlarini eng tezkor usuli</h1>
+                
+                <p class="hero-description">
+                    OMR dasturi yordamida test varaqalarini soniyalarda va o'zingiz hohlagandek qilib yarating
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">1000+</span>
+                        <span class="stat-label">Testlar</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">99%</span>
+                        <span class="stat-label">Aniqlik</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Qo'llab-quvvatlash</span>
+                    </div>
+                </div>
+                
+                <div class="hero-btns">
+                    <a href="#demo" class="btn-primary">
+                        <i class="fas fa-play-circle"></i> Funksiyalarni ko'rish
+                    </a>
+                </div>
+            </div>
+            
+                
+                <img src="test.png" 
+                     alt="OMR System boshqaruv paneli" 
+                     class="main-image"
+                     loading="eager">
+            </div>
+        </div>
+
+    </header>
+
+
+    <section id="demo" class="demo-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>OMR Dasturi <span class="gradient-text">Qanday Ishlaydi?</span></h2>
+            </div>
+
+
+            <div class="video-slider-container" data-aos="zoom-in">
+                <button class="slider-btn prev-btn" onclick="changeSlide(-1)" aria-label="Oldingi video">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <div class="video-slider">
+
+                    <div class="slide active">
+                        <div class="slide-video">
+                            <video autoplay muted loop playsinline preload="auto">
+                                <source src="videos/gif1.mp4" type="video/mp4">
+                                Sizning brauzeringiz video formatini qo'llab-quvvatlamaydi
+                            </video>
+                        </div>
+                        <div class="slide-info">
+                            <div class="slide-icon">
+                                <i class="fas fa-qrcode"></i>
+                            </div>
+                            <h3>01. QR code joylashtirish</h3>
+                            <p>Dasturda QR code ingizni hohlagan tarzda qulaylik bilan joylashtira olasiz.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="slide">
+                        <div class="slide-video">
+                            <video muted loop playsinline preload="auto">
+                                <source src="videos/gif2.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="slide-info">
+                            <div class="slide-icon">
+                                <i class="fas fa-cog"></i>
+                            </div>
+                            <h3>02. Dasturni moslashtirish</h3>
+                            <p>Dasturni o'zingizga mos qilib bemalol moslashtira olasiz.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="slide">
+                        <div class="slide-video">
+                            <video muted loop playsinline preload="auto">
+                                <source src="videos/gif3.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="slide-info">
+                            <div class="slide-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <h3>03. Test shablonlarini moslashtirish</h3>
+                            <p>Test shablonlarini o'zingizga har qanaqasiga moslashtiria olasiz.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="slide-video">
+                            <video muted loop playsinline preload="auto">
+                                <source src="videos/gif4.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="slide-info">
+                            <div class="slide-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h3>04. Tezkor tekshirish</h3>
+                            <p>Dasturda test varaqalarini tezkor usulda hatoliklarini ko'rib chiqa olasiz masalan: QR code lar aniq joylashganmi shunday ishlarni avtomatik dastur aniqlay oladi. </p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="slide-video">
+                            <video muted loop playsinline preload="auto">
+                                <source src="videos/gif5.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="slide-info">
+                            <div class="slide-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <h3>05. Test varaqalarini yaratish</h3>
+                            <p>Test varaqalarini o'zingiz hohlagandek hohlagan o'lcham va hohlagan ko'rinishda qilib tayyorlab olsangiz bo'ladi.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="slide-video">
+                            <video muted loop playsinline preload="auto">
+                                <source src="videos/gif6.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="slide-info">
+                            <div class="slide-icon">
+                                <i class="fas fa-chart-pie"></i>
+                            </div>
+                            <h3>06. Fayllarni saqlab olish</h3>
+                            <p>Test natijalarini excel formatda saqlab olishingiz mumkin.</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="slide">
+                        <div class="slide-video">
+                            <video muted loop playsinline preload="auto">
+                                <source src="videos/gif7.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="slide-info">
+                            <div class="slide-icon">
+                                <i class="fas fa-chart-pie"></i>
+                            </div>
+                            <h3>07. Test varaqasini tayyorlash jarayoni</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="slider-btn next-btn" onclick="changeSlide(1)" aria-label="Keyingi video">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="slide-counter">
+                <span id="currentSlide">1</span> / <span id="totalSlides">7</span>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="subtitle">AFZALLIKLAR</span>
+                <h2>Nega Aynan <span class="gradient-text"> Bizning OMR Dasturi?</span></h2>
+                <p>Boshqa tizimlardan afzalliklarimiz va sizga taklif qiladigan imkoniyatlar.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Tezkor Ishlash</h3>
+                    <p>Dastur ishlashda qotish va sekin ishlash yo'q.</p>
+                    <div class="feature-progress">
+                        <span>2x tezroq</span>
+                    </div>
+                </div>
+                
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon-box">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>99% Aniqlik</h3>
+                    <p>OMR Dasturimiz 99% aniqlik bilan ishlashi.</p>
+                </div>
+                
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon-box">
+                        <i class="fas fa-file-export"></i>
+                    </div>
+                    <h3>Excel fayl</h3>
+                    <p>Dasturimizda testlarni Excel faylda saqlab olishingiz mumkin. </p>
+                </div>
+                
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="icon-box">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Qo'llab-quvvatlash</h3>
+                    <p>Ishlatishda qiyinchilik bo'lsa 24/7 tarzda xizmat mavjud</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="requirements">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>OMR <span class="gradient-text">dasturini sotib olish</span></h2>
+            </div>
+            
+            <div class="requirements-grid">
+                <div class="requirement-card" data-aos="flip-left">
+                    <i class="fas fa-cart-shopping"></i>
+                    <h3>OMR dasturini sotib olish uchun yuqoridagi <span class="tel"><a href="contact.html" class="tela"> Bog'lanish</a></span> tugmasini bosish orqali bog'laning va shu orqali harid qiling</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="subtitle">KO'P SO'RALGAN SAVOLLAR</span>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>OMR dasturi qanday kompyuterlarda ishlaydi?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>OMR Dasturimiz hech qanday kompyuter tanlamay ishlayveradi.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Dasturni qanday qilib sotib olsam bo'ladi?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Dasturni sotib olish uchun yuqoridagi Bog'lanish tugmasini bosib biz bilan bog'laning va shu orqali sotib oling.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Dasturni to'g'ri ishlashiga kafolat beriladimi?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ha OMR dasturimiz aniq va to'g'ri ishlashiga kafolat beramiz.</p>
+                    </div>  
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Qo'llab-quvvatlash xizmati bormi?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ha, biz 24/7 texnik yordam xizmatiga egamiz. Telefon raqam yoki Telegram orqali istalgan vaqtda murojaat qilishingiz mumkin.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="cta-strip">
+        <div class="container">
+            <div class="cta-content">
+                <i class="fas fa-rocket cta-icon"></i>
+                <h2>Hoziroq Boshlashga Tayyormisiz?</h2>
+                <p>OMR tizimi bilan test jarayonlarini 2x ga tezlashtiring</p>
+                <a href="contact.html" class="btn-cta">
+                    sotib olish <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">OMR<span>System</span></div>
+                    <p>Test jarayonlarini avtomatlashtirishning eng ishonchli va tezkor usuli</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Asosiy</h4>
+                        <ul>
+                            <li><a href="index.html">Bosh sahifa</a></li>
+                            <li><a href="#demo">Funksiyalar</a></li>
+                            <li><a href="#features">Afzalliklar</a></li>
+                            <li><a href="contact.html">Bog'lanish</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 OMR Dasturi</p>
+                <p class="credit">infinite-co tomonidan ishlab chiqilgan</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script> 
+</body>
+</html>
